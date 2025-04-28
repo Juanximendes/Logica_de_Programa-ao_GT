@@ -64,7 +64,7 @@
 
 //     console.log("soma: " + soma);
 
-    
+
 // }
 
 // soma(4 ,4)
@@ -73,19 +73,56 @@
 
 // function saudaçao(nome1, idade , nacionalidade) {
 //     console.log("ola " + nome1 + " vc tem " + idade + " anos de idade e sua nacionalidade é: " + nacionalidade);
-    
+
 // }
 
 // saudaçao("joao" , 10 , "Brasileiro")
 
+// let listaDeNomes = ["Rafinha", "Pedro", "Ariana", "AYRON"];
 
 
-function listaNomes(nomes) {
-    for (let i = 0; i < nomes.length; i++) {
-      console.log("Olá, " + nomes[i] + "!");
+// function listaNomes(nomes) {
+//     for (let i = 0; i < nomes.length; i++) {
+//       console.log("Olá, " + nomes[i] + "!");
+//     }
+
+//     for  (let nome of nomes){
+//         console.log("Olá, " + nome + "!");
+//         }
+//   }
+
+// listaNomes(listaDeNomes);
+
+
+// let carro = {modelo: "civic", ano:2024, marca:"honda"}
+
+
+// let celular1 = {modelo: "A10" , tipo:"smartphone", bateria: 1500}
+
+
+
+// let celulares =  [ {modelo: "a10", tipo: "smartphone"}, {modelo: "civic", ano:2024, marca:"honda"} ]
+
+// console.log(celulares);
+
+
+
+
+function criarFilme(titulo, genero, ano, duraçao) {
+    return {
+        titulo: titulo,
+        genero: genero,
+        ano: ano,
+        duraçao: duraçao
     }
-  }
-  
 
-  let listaDeNomes = ["Rafinha", "Pedro", "Ariana", "AYRON"];
-  listaNomes(listaDeNomes);
+}
+
+let filme1 = criarFilme("Um Sonho de Liberdade", "Policial, Drama", 2025, "2h 55min")
+
+console.log(filme1);
+
+
+let filmes = [{ titulo: "Um Sonho de Liberdade", genero: "Policial, Drama", ano: 2025, duraçao: "2h 55min" }, { titulo: "O Poderoso Chefão", genero: "Drama", ano: 2025, duraçao: "2h 22min" }]
+
+console.log(filmes[1].titulo);
