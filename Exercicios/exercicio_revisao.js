@@ -17,6 +17,7 @@
 
 // else { console.log("Olá, me chamo " + nome + " e sou professor do curso " + curso); }
 
+
 // let frutas = ["laranja", "Maça", "uva" , "goiaba" , "manga" , "kiui" , "jaca" , "morango" , "uva verde" , "tomate"]
 
 // console.log(frutas[0]);
@@ -40,6 +41,8 @@
 // console.log("");
 // console.log("");
 // console.log("");
+
+// console.log("lista de frutas");
 
 // for( let i = 1; i < frutas.length; i++){
 //     console.log(frutas[i]);
@@ -68,9 +71,21 @@
 
 
 
-function saudaçao(nome1, idade , nacionalidade) {
-    console.log("ola " + nome1 + " e vc tem " + idade + " anos de idade e sua nacionalidade é: " + nacionalidade);
+// function saudaçao(nome1, idade , nacionalidade) {
+//     console.log("ola " + nome1 + " vc tem " + idade + " anos de idade e sua nacionalidade é: " + nacionalidade);
     
-}
+// }
 
-saudaçao("joao" , 10 , "Brasileiro")
+// saudaçao("joao" , 10 , "Brasileiro")
+
+
+
+function listaNomes(nomes) {
+    for (let i = 0; i < nomes.length; i++) {
+      console.log("Olá, " + nomes[i] + "!");
+    }
+  }
+  
+
+  let listaDeNomes = ["Rafinha", "Pedro", "Ariana", "AYRON"];
+  listaNomes(listaDeNomes);
