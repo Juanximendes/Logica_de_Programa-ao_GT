@@ -1,4 +1,4 @@
-let numero = 23;
+let numero = 5;
 
 if ( numero % 2 === 0){
     console.log("O numero é par")
