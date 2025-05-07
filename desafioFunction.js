@@ -72,3 +72,51 @@ function maior(number1, number2) {
 }
 
 maior(20, 20)
+
+
+function saudarUsuario(nome, hora) {
+    if (hora < 12) {
+        return `Bom dia, ${nome}!`;
+    } else if (hora>=12 && hora < 18) {
+        return `Boa tarde, ${nome}!`;
+    } else {
+        return `Boa noite, ${nome}!`;
+    }
+}
+
+console.log(saudarUsuario("Pedro", 19));
+
+
+console.log("");
+
+
+function gerarRecibo(nome, produto, valor) {
+    return `Recibo de Compra
+  Cliente: ${nome}
+  Produto: ${produto}
+  Total: R$${valor}
+  Obrigado pela preferência!`;
+}
+
+console.log(gerarRecibo("Juan", "Geladeira", 3500));
+
+console.log("");
+
+function emailBoasVindas(nome, curso) {
+    return `Olá, ${nome}!
+  Seja bem-vindo ao curso de ${curso}.
+  Estamos felizes por tê-lo conosco!`;
+}
+
+console.log(emailBoasVindas("Pedro", "Programação em JavaScript"));
+
+console.log("");
+
+
+function calcularDesconto(nome, preco, desconto) {
+    return `Olá, ${nome}. O produto de R$${preco} com desconto de ${desconto}% custa R$${(preco * (1 - desconto / 100)).toFixed(2)}.`;
+}
+
+
+
+
